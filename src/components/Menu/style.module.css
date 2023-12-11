@@ -1,0 +1,22 @@
+.menu_container {
+    display: flex;
+}
+
+.menu_list {
+    display: flex;
+    gap: 2.06rem;
+    list-style: none;
+}
+
+.topic_link {
+    text-decoration: none;
+    color: #83888F;
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.9375rem;
+    letter-spacing: 0.05769rem;
+    text-transform: uppercase;
+}
+
