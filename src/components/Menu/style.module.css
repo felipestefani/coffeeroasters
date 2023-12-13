@@ -20,3 +20,13 @@
     text-transform: uppercase;
 }
 
+/* ----------------------------- hover status -------------------------- */
+.topic_link:hover {
+    color: #333D4B;
+}
+
+@media (max-width:680px) {
+    .menu_container {
+        display: none;
+    }
+}

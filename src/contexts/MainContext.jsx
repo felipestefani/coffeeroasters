@@ -4,12 +4,12 @@ export const MainContext = createContext({})
 
 const MainContextProvider = ({children}) => {
 
-    const [nome, setNome] = useState('')
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     return(
         <MainContext.Provider 
             value = {{
-                nome, setNome
+                isModalOpen, setIsModalOpen
             }}>
                 { children }
         </MainContext.Provider>
