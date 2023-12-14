@@ -11,8 +11,7 @@ const MenuModal = () => {
 
     return(
             isModalOpen ? (
-
-                    <div className={style.modal_container} >
+                    <div className={style.modal_container} onBlur={() => setIsModalOpen(false)}>
                         <ul className={style.menu_modal_list}>
                         {
                             topics.map(topic => (

@@ -10,7 +10,6 @@ const Header = () => {
 
     const { isModalOpen, setIsModalOpen } = useContext(MainContext)
 
-
     return(
         <header className={style.header_container}>
             <nav className={style.navbar}>
@@ -18,7 +17,7 @@ const Header = () => {
                 <Menu/>
                 {
                     isModalOpen ? (
-                        <img src={closeIcon} alt="hamburger menu" className={style.hamburger_menu} onClick={() => setIsModalOpen(false)}/>
+                        <img src={closeIcon} alt="close icon" className={style.close_icon} onClick={() => setIsModalOpen(false)}/>
                     ) : (
                         <img src={hamburger} alt="hamburger menu" className={style.hamburger_menu} onClick={() => setIsModalOpen(true)}/>
                     )

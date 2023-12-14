@@ -30,5 +30,10 @@
         font-style: normal;
         font-weight: 900;
         line-height: 2rem; /* 133.333% */
+        cursor: pointer;
     }
+}
+
+.menu_modal_link:hover {
+    color: #0E8784;
 }
