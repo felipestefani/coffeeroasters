@@ -1,9 +1,8 @@
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
+import { topics } from "../../data/menuList.jsx";
 
 const Menu = () => {
-
-    const topics = ['Home', 'About us', 'Create your plan']
 
     return (
         <div className={style.menu_container}>

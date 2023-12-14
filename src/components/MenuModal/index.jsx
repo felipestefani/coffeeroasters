@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import style from "./style.module.css";
-import closeIcon from "../../assets/shared/mobile/icon-close.svg";
+import { topics } from "../../data/menuList.jsx";
+import { Link } from "react-router-dom";
 import { MainContext } from "../../contexts/MainContext";
 
 
@@ -10,9 +11,17 @@ const MenuModal = () => {
 
     return(
             isModalOpen ? (
-                <div className={style.modal_container} >
-                    <img src={closeIcon} alt="close icon" onClick={() => setIsModalOpen(false)}/>
-                </div>
+
+                    <div className={style.modal_container} >
+                        <ul className={style.menu_modal_list}>
+                        {
+                            topics.map(topic => (
+                                <li key={topic}><Link to={'#'} className={style.menu_modal_link}>{topic}</Link></li>
+                            ))
+                        }
+                        </ul>
+                        <div className={style.gradiente}></div>
+                    </div>
             ) : ''
     )
 }

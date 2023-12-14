@@ -1,8 +1,34 @@
-
 .modal_container {
-    position: absolute;
-    width: 100%;
-    height: 2rem;
-    background-color: black;
-    top: 10rem;
+    display: none;
+}
+
+@media (max-width:680px) {
+    .modal_container {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background:#FEFCF7;
+        top: 6rem;
+        box-shadow: 0px 20px 20px #FEFCF7;
+    }
+    
+    .menu_modal_list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2.5rem 0;
+    }
+    
+    .menu_modal_link {
+        text-decoration: none;
+        color: #333D4B;
+        text-align: center;
+        font-family: 'Fraunces' 9pt;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 2rem; /* 133.333% */
+    }
 }
