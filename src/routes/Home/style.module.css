@@ -38,3 +38,42 @@
     margin-bottom: 3.5rem;
     opacity: 0.8;
 }
+
+.collection_container {
+    position: relative;
+}
+
+.our_collection {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_collection h2 {
+    color: #83888F;
+    font-family: 'Fraunces', 'Times New Roman', Times, serif;
+    font-size: 12rem;
+    text-size-adjust: auto;
+    font-weight: 900;
+    line-height: 8rem;
+    text-transform: lowercase;
+    background: -webkit-linear-gradient(#83888F 0%, #FEFCF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.our_collection_list {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}

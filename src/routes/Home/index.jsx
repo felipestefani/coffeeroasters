@@ -1,8 +1,11 @@
 import style from "./style.module.css";
 import MainTemplate from "../../templates/MainTemplate/index.jsx";
 import Button from "../../components/Button";
+import OurCollectionCard from "../../components/OurCollectionCard";
+import our_collection_data from "../../data/ourCollectionData.jsx";
 
 const Home = () => {
+
     return (
       <MainTemplate>
         <div className={style.home_container}>
@@ -16,20 +19,21 @@ const Home = () => {
               <Button buttonTitle='Create your plan' />
             </div>
           </div>
-
-        Our collection
+          <div className={style.collection_container}>
+            <div className={style.our_collection}>
+              <h2>Our collection</h2>
+            </div>
+            <ul className={style.our_collection_list}>
+              {
+                our_collection_data.map (data => (
+                  <OurCollectionCard key={data.title} coffe_image={data.coffe_image} title={data.title} description={data.description} />
+                ))
+              }
+            </ul>
+          </div>
+        
       
-        Gran Espresso
-        Light and flavorful blend with cocoa and black pepper for an intense experience
-      
-        Planalto
-        Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
-      
-        Piccollo
-        Mild and smooth blend featuring notes of toasted almond and dried cherry
-      
-        Danche
-        Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+        
       
         Why choose us?
       
