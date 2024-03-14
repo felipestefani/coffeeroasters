@@ -77,3 +77,45 @@
     align-items: flex-start;
     gap: 2rem;
 }
+
+.choose_us_contanier {
+    position: relative;
+    background: #2C343E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose_us_title {
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Fraunces 9pt";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3rem; /* 120% */
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.choose_us_text {
+    color: #FEFCF7;
+    opacity: 0.8;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem; /* 162.5% */
+    width: 40rem;
+    margin-bottom: 19.8rem;
+}
+
+.choose_list {
+    display: flex;
+}
+
+.choose_item {
+    list-style: none;
+}

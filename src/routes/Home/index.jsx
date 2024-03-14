@@ -31,25 +31,32 @@ const Home = () => {
               }
             </ul>
           </div>
+          <div className={style.choose_us_contanier}>
+              <h2 className={style.choose_us_title}>Why choose us?</h2>
+              <p className={style.choose_us_text}>
+                A large part of our role is choosing which particular coffees will be featured 
+                in our range. This means working closely with the best coffee growers to give 
+                you a more impactful experience on every level.
+              </p>
+              <ul className={style.choose_list}>
+                <li className={style.choose_item}>
+                  <img src="" alt="" />
+                  <h3>Best quality</h3>
+                  <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                </li>
+                <li className={style.choose_item}>
+                  <img src="" alt="" />
+                  <h3>Exclusive benefits</h3>
+                  <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                </li>
+                <li className={style.choose_item}>
+                  <img src="" alt="" />
+                  <h3>Free shipping</h3>
+                  <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                </li>
+              </ul>
+          </div>
         
-      
-        
-      
-        Why choose us?
-      
-        A large part of our role is choosing which particular coffees will be featured 
-        in our range. This means working closely with the best coffee growers to give 
-        you a more impactful experience on every level.
-      
-        Best quality
-        Discover an endless variety of the world’s best artisan coffee from each of our roasters.
-      
-        Exclusive benefits
-        Special offers and swag when you subscribe, including 30% off your first shipment.
-      
-        Free shipping 
-        We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
-      
         How it works
       
         01
